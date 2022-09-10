@@ -1,0 +1,25 @@
+<%- include("partials/header") -%>
+<div class="app">
+  <div class="title">
+    <h1>Welcome!</h1>
+    <img src="images/calculator.gif" alt="calculator-gif">
+  </div>
+  
+  
+  <form action="/" method="post">
+    <div class="mb-3">
+      <label class="form-label">Enter your equation here</label>
+      <input type="text" class="form-control" placeholder=" 1 + 2" name="equation">
+    </div>
+    <button class="btn btn-dark" type="submit" name="button">Calculate</button>
+  </form>
+
+  <div class="result">
+    <p><%= equationResult %></p>
+  </div>
+
+</div>
+
+
+
+<%- include("partials/footer") -%>
